@@ -1,0 +1,296 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}   
+
+html {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    width: 100%;
+}
+
+#nav-list {
+    z-index: 5;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    background-color: black;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.zoom:hover {
+    transition: transform .2s;
+    transform: scale(1.1); 
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+}
+
+#mountain-screenshot {
+    height: 60vh;
+    width: 100vw;
+}
+
+#name, #title {
+    color: white;
+    position: absolute;
+    right: 14%;
+}
+
+#name {
+    top: 25%;
+}
+
+#title {
+    top: 30%;
+}
+
+#about, #services, #projects, #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#about {
+    padding-top: 5%;
+}
+
+#about, #projects {
+    background-image: linear-gradient(white, lightgrey);
+}
+
+.section-title {
+    font-size: 2.2rem;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.section-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+#services, #contact {
+    background-image: linear-gradient(lightgrey, white);
+}
+
+#certified {
+    width: 50%;
+    color: black;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#services-list {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.services-item {
+    margin: 2%;
+    width: 45%;
+}
+
+#projects-div {
+    width: 90%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.projects-button {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 30%;
+    height: 200px;
+}
+
+.project-img {
+    height: 100%;
+    width: 100%;
+}
+
+#bookmark-manager-div, #complaint-form-div, #drum-machine-div {
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.animate {
+  animation-duration: 0.5s;
+  animation-name: animate-fade;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.project-p {
+    margin-top: 2%;
+    width: 80%;
+}
+
+#bookmark-manager-screenshots {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bookmark-manager-screenshot {
+    width: 49%;
+    border-radius: 10px;
+    height: 250px;
+}
+
+.secondary-project-p {
+    margin: 3%;
+    width: 80%;
+}
+
+.project-link {
+    width: 70%;
+    color: black;
+}
+
+#complaint-form-screenshot {
+    width: 80%;
+}
+
+#contact {
+    padding-top: 2%;
+}
+
+.contact-me-link {
+    color: black;
+}
+
+#closing-statement {
+    width: 80%;
+    text-align: center;
+}
+
+@media (min-width: 720px) {
+    ul {
+        font-size: 2rem;
+    }
+
+    #mountain-screenshot {
+        height: 95vh;
+    }
+
+    #name, #title {
+        right: 32%;
+    }
+
+    #name {
+        top: 35%;
+        font-size: 4rem;
+    }
+
+    #title {
+        font-size: 3rem;
+        top: 43%;
+    }
+
+    #about, #services, #projects, #contact {
+        padding-top: 2%;
+        font-size: 1.7rem;
+    }
+
+    .section-title {
+        padding: 2%;
+    }
+
+    .section-p {
+        width: 50%;
+    }
+
+    #certified {
+        width: 22%;
+    }
+    #services-list {
+        width: 70%;
+    }
+
+    #projects-div {
+        width: 80%;
+    }
+
+    .projects-button {
+        border: 3px solid black;
+        height: 350px
+    }
+
+    #bookmark-manager-div, #complaint-form-div, #drum-machine-div {
+        justify-content: space-around;
+    }
+
+    .project-p {
+        margin: 3%;
+        width: 60%;
+    }
+
+    #bookmark-manager-screenshots {
+        justify-content: center;
+    }
+
+    .bookmark-manager-screenshot {
+        margin: 1%;
+        width: 30%;
+        height: 375px;
+    }
+
+    .secondary-project-p {
+        width: 50%;
+        margin: 2%;
+    }
+
+    #complaint-form-screenshot {
+        width: 60%;
+    }
+    
+    #contact {
+        padding-top: 3%;
+    }
+
+    #closing-statement {
+        width: 60%;
+        padding-top: 2%;
+    }
+}

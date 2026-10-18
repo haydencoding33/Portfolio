@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="styles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta keywords="HTML, CSS, Javascript, Portfolio, Hayden, Frontend, Developer, Website, SEO, Accessibility">
+    <meta author="Hayden">
+    <meta description="Click here to see Hayden's Portfolio website, an up-and-coming frontend developer.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayden's Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="nav-list">
+                <li class="zoom"><a href="#about" class="zoom">About</a></li>
+                <li class="zoom"><a href="#services" class="zoom">Services</a></li>
+                <li class="zoom"><a href="#projects" class="zoom">Projects</a></li>
+                <li class="zoom"><a href="#contact" class="zoom">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img id="mountain-screenshot" src="mountainsScreenshot.jpg" alt="Photo of a mountain range covered in an alpine forest.">
+    <h1 id="name">Hello, I'm Hayden</h1>
+    <h2 id="title">Frontend Developer</h2>
+    <div id="about">
+        <h3 class="section-title">About</h3>
+        <p class="section-p">I am a Frontend developer based in the United States. I have three website development certificates for Responsive Web Design,
+            Javascript, and Front-end Libraries.</p>
+    </div>
+    <div id="services">
+        <h3 class="section-title">Services</h3>
+        <a id="certified" class="section-p" href="https://www.freecodecamp.org/haydencoding" target="_blank">See my certificates here</a>
+        <ul id="services-list">
+            <li class="services-item">Responsive Website Design</li>
+            <li class="services-item">Website Development</li>
+            <li class="services-item">HTML</li>
+            <li class="services-item">CSS</li>
+            <li class="services-item">Javascript</li>
+            <li class="services-item">React</li>
+            <li class="services-item">Tailwind CSS</li>
+            <li class="services-item">TypeScript</li>
+            <li class="services-item">SEO</li>
+            <li class="services-item">Accessibility</li>
+        </ul>
+    </div>
+    <div id="projects">
+        <h3 class="section-title">Projects</h3>
+        <p class="section-p">Click on a project for a more detailed look:</p>
+        <div id="projects-div">
+            <button class="projects-button" id="bookmark-manager-button"><img class="project-img zoom" src="bookmarkMangerHomeScreenshot.png" alt="Screenshot of the Bookmark Manager project homescreen."></button>
+            <button class="projects-button" id="complaint-form-button"><img class="project-img zoom" src="complaintFormInteractivityScreenshot.png" alt="Screenshot of the Complaint Form project."></button>
+            <button class="projects-button" id="drum-machine-button"><img class="project-img zoom" src="drumMachineScreenshot.png" alt="Screenshot of the Drum Machine project."></button>
+        </div>
+        <div id="bookmark-manager-div" class="project-div animate" aria-hidden="true">
+            <p class="project-p">I have created a fully customized and functional bookmark managing app. I used HTML, CSS and Javascript to get, set and edit items in local storage using buttons.</p>
+            <div id="bookmark-manager-screenshots">
+                <img class="bookmark-manager-screenshot" src="bookmarkManagerAddBookmarkScreenshot.png" alt="Screenshot of the add bookmark section of the Bookmark Manager project.">
+                <img class="bookmark-manager-screenshot" src="bookmarkManagerManageBookmarksScreenshot.png" alt="Screenshot of the manage bookmarks section of the Bookmark Manager project.">
+            </div>
+            <p class="secondary-project-p">The add bookmark and manage bookmarks sections of the Bookmark Manager.</p>
+            <a class="project-link" href="https://github.com/haydencoding333/bookmarkManager" target="_blank">The code used for this project can be found here</a>
+        </div>
+        <div id="complaint-form-div" class="project-div animate" aria-hidden="true">
+            <p class="project-p">I have created a stylized and interactive customer complaint form using HTML, CSS and Javascript. The form indicates if the field has been filled out correctly using regular expressions.</p>
+            <img id="complaint-form-screenshot" src="complaintFormSuccess.png" alt="Screenshot of the alert message that shows on successful submission of the complaint form.">
+            <p class="secondary-project-p">Alert displayed upon successful completion.</p>
+            <a class="project-link" href="https://github.com/haydencoding333/complaintForm" target="_blank">The code used for this project can be found here</a>
+        </div>
+        <div id="drum-machine-div" class="project-div animate" aria-hidden="true">
+            <p class="project-p">I have created an interactive and stylized drum machine that uses keyboard event listeners to allow the user to play different tones based on their input.</p>
+            <a class="project-link" href="https://github.com/haydencoding333/drumMachine" target="_blank">The code used for this project can be found here</a>
+        </div>
+    </div>
+    <div id="contact">
+        <h3 class="section-title">Contact</h3>
+        <p class="section-p">Email me:<a class="contact-me-link" href="https://mail.google.com/mail/u/0/#inbox" target="_blank">haydencoding333@gmail.com</a></p>
+        <p class="section-p">Message me on <a class="contact-me-link" href="https://www.linkedin.com/in/hayden-a-673571441/?isSelfProfile=true" target="_blank">LinkedIn</a></p>
+        <p class="section-p">Message me on <a class="contact-me-link" href="https://github.com/haydencoding333" target="_blank">Github</a></p>
+        <h2 id="closing-statement">Thank you for taking the time to view my portfolio. I hope to hear from you soon!</h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
