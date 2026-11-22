@@ -3,6 +3,7 @@
 }   
 
 html {
+    scroll-behavior: smooth;
     height: 100vh;
     width: 100vw;
     margin: 0;
@@ -13,11 +14,13 @@ html {
 }
 
 body {
+    margin: 0;
     width: 100%;
 }
 
 #nav-list {
     z-index: 5;
+    font-size: 2rem;
     margin: 0;
     position: fixed;
     top: 0;
@@ -42,43 +45,47 @@ ul a {
 }
 
 #mountain-screenshot {
-    height: 60vh;
+    height: 90vh;
     width: 100vw;
 }
 
 #name, #title {
     color: white;
     position: absolute;
-    right: 14%;
+    left: 14%;
+    font-size: 4rem;
 }
 
 #name {
-    top: 25%;
+    top: 33%;
 }
 
 #title {
-    top: 30%;
+    top: 40%;
 }
 
-#about, #services, #projects, #contact {
+#about, #projects, #services, #contact {
+    padding: 0;
+    margin: 0;
+    padding-top: 1%;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     text-align: center;
-    font-size: 1.5rem;
-}
-
-#about {
-    padding-top: 5%;
 }
 
 #about, #projects {
     background-image: linear-gradient(white, lightgrey);
 }
 
+#about {
+    padding-top: 2%;
+}
+
 .section-title {
-    font-size: 2.2rem;
+    border-radius: 10px;
+    font-size: 3rem;
     padding: 5px;
     border: 2px solid black;
 }
@@ -87,7 +94,9 @@ ul a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 3%;
     justify-content: center;
+    font-size: 2rem;
     width: 60%;
 }
 
@@ -96,35 +105,41 @@ ul a {
 }
 
 #certified {
-    width: 50%;
+    width: 30%;
     color: black;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
 
 #services-list {
-    width: 90%;
+    padding: 0;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+    width: 80%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     list-style-type: none;
 }
 
-.services-item {
+.service {
+    display: flex;
     margin: 2%;
-    width: 45%;
+    justify-content: center;
+    width: 28%;
 }
 
-#projects-div {
+#projects-buttons-div {
     width: 90%;
-    margin-top: 5%;
     display: flex;
     flex-direction: row;
+    height: 400px;
     align-items: center;
     justify-content: space-around;
 }
 
 .projects-button {
+    height: 100%;
     overflow: hidden;
     padding: 0;
     margin: 0;
@@ -132,7 +147,6 @@ ul a {
     cursor: pointer;
     border-radius: 5px;
     width: 30%;
-    height: 200px;
 }
 
 .project-img {
@@ -140,7 +154,7 @@ ul a {
     width: 100%;
 }
 
-#bookmark-manager-div, #complaint-form-div, #drum-machine-div {
+.project-div {
     display: none;
     flex-direction: column;
     flex-wrap: wrap;
@@ -168,14 +182,15 @@ ul a {
 #bookmark-manager-screenshots {
     width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .bookmark-manager-screenshot {
-    width: 49%;
     border-radius: 10px;
-    height: 250px;
+    width: 37%;
+    margin: 2%;
+    height: 400px;
 }
 
 .secondary-project-p {
@@ -185,15 +200,27 @@ ul a {
 
 .project-link {
     width: 70%;
+    font-size: 2rem;
     color: black;
 }
 
 #complaint-form-screenshot {
-    width: 80%;
+    border-radius: 10px;
+    margin: 2%;
+    width: 50%;
 }
 
-#contact {
-    padding-top: 2%;
+#forum-leaderboard-screenshot {
+    border-radius: 10px;
+    margin: 2%;
+    width: 50%;
+}
+
+.contact-p {
+    display: flex;
+    margin: 1.5%;
+    flex-direction: column;
+    font-size: 2.5rem;
 }
 
 .contact-me-link {
@@ -202,95 +229,377 @@ ul a {
 
 #closing-statement {
     width: 80%;
+    font-size: 3rem;
     text-align: center;
 }
 
-@media (min-width: 720px) {
-    ul {
-        font-size: 2rem;
+@media (max-width: 1080px) {
+    #nav-list {
+        font-size: 1.8rem;
     }
 
     #mountain-screenshot {
-        height: 95vh;
-    }
-
-    #name, #title {
-        right: 32%;
+        height: 90vh;
     }
 
     #name {
-        top: 35%;
-        font-size: 4rem;
+        font-size: 3.5rem;
+        left: 15%;
     }
 
     #title {
         font-size: 3rem;
-        top: 43%;
-    }
-
-    #about, #services, #projects, #contact {
-        padding-top: 2%;
-        font-size: 1.7rem;
+        left: 15%;
     }
 
     .section-title {
-        padding: 2%;
+        font-size: 2.5rem;
     }
 
     .section-p {
-        width: 50%;
-    }
-
-    #certified {
-        width: 22%;
-    }
-    #services-list {
-        width: 70%;
-    }
-
-    #projects-div {
+        margin: 3%;
+        font-size: 2rem;
         width: 80%;
     }
 
-    .projects-button {
-        border: 3px solid black;
-        height: 350px
+    #certified {
+        margin: 0;
+        width: 35%;
     }
 
-    #bookmark-manager-div, #complaint-form-div, #drum-machine-div {
-        justify-content: space-around;
+    .service {
+        font-size: 2rem;
     }
 
-    .project-p {
-        margin: 3%;
-        width: 60%;
-    }
-
-    #bookmark-manager-screenshots {
-        justify-content: center;
+    #projects-buttons-div {
+        height: 300px;
     }
 
     .bookmark-manager-screenshot {
-        margin: 1%;
-        width: 30%;
-        height: 375px;
-    }
-
-    .secondary-project-p {
-        width: 50%;
-        margin: 2%;
+        height: 300px;
+        width: 40%;
     }
 
     #complaint-form-screenshot {
         width: 60%;
     }
+
+    #forum-leaderboard-screenshot {
+        width: 60%;
+    }
+
+    .project-link {
+        font-size: 2rem;
+    }
+
+    .contact-p {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 840px) {
+    #nav-list {
+        font-size: 1.8rem;
+    }
     
-    #contact {
-        padding-top: 3%;
+    #mountain-screenshot {
+        height: 70vh;
+    }
+
+    #name {
+        font-size: 3rem;
+        top: 28%;
+        left: 15%;
+    }
+
+    #title {
+        font-size: 2.5rem;
+        left: 15%;
+        top: 35%;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .section-p {
+        font-size: 2rem;
+        width: 80%;
+        margin: 5%;
+    }
+
+    #certified {
+        margin: 0;
+        width: 45%;
+    }
+
+    .service {
+        font-size: 2rem;
+    }
+
+    #projects-buttons-div {
+        height: 275px;
+    }
+
+    .bookmark-manager-screenshot {
+        height: 300px;
+        width: 45%;
+    }
+
+    #complaint-form-screenshot {
+        width: 65%;
+    }
+
+    #forum-leaderboard-screenshot {
+        width: 65%;
+    }
+
+    .contact-p {
+        font-size: 2rem;
     }
 
     #closing-statement {
+        font-size: 2.5rem;
+        width: 90%;
+    }
+}
+
+@media (max-width: 640px) {
+    #nav-list {
+        font-size: 1.5rem;
+    }
+
+    #mountain-screenshot {
+        height: 60vh;
+    }
+
+    #name {
+        font-size: 2.5rem;
+        top: 25%;
+        left: 15%;
+    }
+
+    #title {
+        font-size: 2rem;
+        left: 15%;
+        top: 32%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-p {
+        font-size: 1.5rem;
+        width: 80%;
+    }
+
+    #certified {
+        width: 45%;
+    }
+
+    .service {
+        font-size: 1.5rem;
+    }
+
+    #projects-buttons-div {
+        height: 200px;
+    }
+
+    .projects-button {
+        height: 100%;
+    }
+
+    .bookmark-manager-screenshot {
+        height: 250px;
+        margin: 2%;
+        width: 45%;
+    }
+
+    #complaint-form-screenshot {
         width: 60%;
-        padding-top: 2%;
+    }
+
+    #forum-leaderboard-screenshot {
+        width: 60%;
+    }
+
+    .project-link {
+        font-size: 1.5rem;
+    }
+
+    .contact-p {
+        font-size: 1.5rem;
+    }
+
+    #closing-statement {
+        font-size: 2rem;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #nav-list {
+        font-size: 1rem;
+    }
+
+    #mountain-screenshot {
+        height: 50vh;
+    }
+
+    #name {
+        font-size: 1.5rem;
+        top: 20%;
+        right: 5%;
+    }
+    
+    #title {
+        font-size: 1.2rem;
+        top: 25%;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .section-p {
+        font-size: 1.2rem;
+        width: 80%;
+    }
+
+    #certified {
+        margin: 2%;
+        width: 45%;
+    }
+
+    #services-list {
+        font-size: 1rem;
+    }
+
+    .service {
+        width: 45%;
+        font-size: 1.2rem;
+    }
+
+    #projects-buttons-div {
+        display: flex;
+        width: 90%;
+        height: 750px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-button {
+        width: 70%;
+        margin-bottom: 5%;
+    }
+
+    #bookmark-manager-screenshots {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .bookmark-manager-screenshot {
+        width: 70%;
+        margin: 5%;
+        height: 250px;
+    }
+
+    #complaint-form-screenshot {
+        width: 70%;
+        margin: 5%;
+    }
+
+    #forum-leaderboard-screenshot {
+        width: 70%;
+        margin: 5%;
+    }
+
+    .project-link {
+        font-size: 1.2rem;
+    }
+
+    #email-link {
+        word-break: break-all;
+    }
+
+    .contact-p {
+        margin-bottom: 5%;
+        font-size: 1.2rem;
+    }
+
+    #closing-statement {
+        font-size: 1.5rem;
+        width: 90%;
+    }
+}
+
+@media (max-width: 280px) {
+    #nav-list {
+        font-size: .8rem;
+    }
+
+    #name {
+        font-size: 1.2rem;
+        top: 20%;
+        right: 5%;
+    }
+
+    #title {
+        font-size: 1.1rem;
+        top: 23%;
+    }
+
+    #certified {
+        width: 80%;
+    }
+
+    #services {
+        margin: 0;
+        padding: 0;
+    }
+
+    .service {
+        font-size: 1rem;
+    }
+
+    #projects-buttons-div {
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        align-items: center;
+    }
+
+    .projects-button {
+        width: 75%;
+        margin-bottom: 5%;
+    }
+    
+    #bookmark-manager-screenshots {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .bookmark-manager-screenshot {
+        height: 200px;
+        margin: 5%;
+    }
+
+    #complaint-form-screenshot {
+        width: 80%;
+        margin: 5%;
+    }
+
+    #forum-leaderboard-screenshot {
+        width: 80%;
+        margin: 5%;
+    }
+
+    .contact-p {
+        font-size: 1.2rem;
+        margin-bottom: 5%;
     }
 }
