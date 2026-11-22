@@ -20,7 +20,7 @@
             </ul>
         </nav>
     </header>
-    <img id="mountain-screenshot" src="mountainsScreenshot.jpg" alt="Photo of a mountain range covered in an alpine forest.">
+    <img id="mountain-screenshot" src="screenshots/mountainsScreenshot.jpg" alt="Photo of a mountain range covered in an alpine forest.">
     <h1 id="name">Hello, I'm Hayden</h1>
     <h2 id="title">Frontend Developer</h2>
     <div id="about">
@@ -32,51 +32,53 @@
         <h3 class="section-title">Services</h3>
         <a id="certified" class="section-p" href="https://www.freecodecamp.org/haydencoding" target="_blank">See my certificates here</a>
         <ul id="services-list">
-            <li class="services-item">Responsive Website Design</li>
-            <li class="services-item">Website Development</li>
-            <li class="services-item">HTML</li>
-            <li class="services-item">CSS</li>
-            <li class="services-item">Javascript</li>
-            <li class="services-item">React</li>
-            <li class="services-item">Tailwind CSS</li>
-            <li class="services-item">TypeScript</li>
-            <li class="services-item">SEO</li>
-            <li class="services-item">Accessibility</li>
+            <li class="service">Responsive Web Design</li>
+            <li class="service">HTML</li>
+            <li class="service">Website Development</li>
+            <li class="service">CSS</li>
+            <li class="service">Javascript</li>
+            <li class="service">Accessibility</li>
+            <li class="service">Tailwind CSS</li>
+            <li class="service">React.js</li>
+            <li class="service">TypeScript</li>
+            <li class="service">SEO</li>
         </ul>
     </div>
     <div id="projects">
         <h3 class="section-title">Projects</h3>
         <p class="section-p">Click on a project for a more detailed look:</p>
-        <div id="projects-div">
-            <button class="projects-button" id="bookmark-manager-button"><img class="project-img zoom" src="bookmarkMangerHomeScreenshot.png" alt="Screenshot of the Bookmark Manager project homescreen."></button>
-            <button class="projects-button" id="complaint-form-button"><img class="project-img zoom" src="complaintFormInteractivityScreenshot.png" alt="Screenshot of the Complaint Form project."></button>
-            <button class="projects-button" id="drum-machine-button"><img class="project-img zoom" src="drumMachineScreenshot.png" alt="Screenshot of the Drum Machine project."></button>
+        <div id="projects-buttons-div">
+            <button class="projects-button" id="bookmark-manager-button"><img class="project-img zoom" src="screenshots/bookmarkMangerHomeScreenshot.png" alt="Screenshot of the Bookmark Manager project homescreen."></button>
+            <button class="projects-button" id="complaint-form-button"><img class="project-img zoom" src="screenshots/complaintFormInteractivityScreenshot.png" alt="Screenshot of the Complaint Form project."></button>
+            <button class="projects-button" id="forum-leaderboard-button"><img class="project-img zoom" src="screenshots/forumLeaderboard.png" alt="Screenshot of the homescreen of the Forum Leaderboard project."></button>
         </div>
         <div id="bookmark-manager-div" class="project-div animate" aria-hidden="true">
-            <p class="project-p">I have created a fully customized and functional bookmark managing app. I used HTML, CSS and Javascript to get, set and edit items in local storage using buttons.</p>
+            <p class="section-p">I have created a fully customized and functional bookmark managing app. I used HTML, CSS and Javascript to get, set and edit items in local storage using buttons.</p>
             <div id="bookmark-manager-screenshots">
-                <img class="bookmark-manager-screenshot" src="bookmarkManagerAddBookmarkScreenshot.png" alt="Screenshot of the add bookmark section of the Bookmark Manager project.">
-                <img class="bookmark-manager-screenshot" src="bookmarkManagerManageBookmarksScreenshot.png" alt="Screenshot of the manage bookmarks section of the Bookmark Manager project.">
+                <img class="bookmark-manager-screenshot" src="screenshots/bookmarkManagerAddBookmarkScreenshot.png" alt="Screenshot of the add bookmark section of the Bookmark Manager project.">
+                <img class="bookmark-manager-screenshot" src="screenshots/bookmarkManagerManageBookmarksScreenshot.png" alt="Screenshot of the manage bookmarks section of the Bookmark Manager project.">
             </div>
-            <p class="secondary-project-p">The add bookmark and manage bookmarks sections of the Bookmark Manager.</p>
+            <p class="section-p">The add bookmark and manage bookmarks sections of the Bookmark Manager.</p>
             <a class="project-link" href="https://github.com/haydencoding333/bookmarkManager" target="_blank">The code used for this project can be found here</a>
         </div>
         <div id="complaint-form-div" class="project-div animate" aria-hidden="true">
-            <p class="project-p">I have created a stylized and interactive customer complaint form using HTML, CSS and Javascript. The form indicates if the field has been filled out correctly using regular expressions.</p>
-            <img id="complaint-form-screenshot" src="complaintFormSuccess.png" alt="Screenshot of the alert message that shows on successful submission of the complaint form.">
-            <p class="secondary-project-p">Alert displayed upon successful completion.</p>
+            <p class="section-p">I have created a stylized and interactive customer complaint form using HTML, CSS and Javascript. The form uses Regular Expressions to indicate if the given field has been filled out correctly.</p>
+            <img id="complaint-form-screenshot" src="screenshots/complaintFormSuccess.png" alt="Screenshot of the alert message that shows on successful submission of the complaint form.">
+            <p class="section-p">Alert displayed upon successful completion.</p>
             <a class="project-link" href="https://github.com/haydencoding333/complaintForm" target="_blank">The code used for this project can be found here</a>
         </div>
-        <div id="drum-machine-div" class="project-div animate" aria-hidden="true">
-            <p class="project-p">I have created an interactive and stylized drum machine that uses keyboard event listeners to allow the user to play different tones based on their input.</p>
-            <a class="project-link" href="https://github.com/haydencoding333/drumMachine" target="_blank">The code used for this project can be found here</a>
+        <div id="forum-leaderboard-div" class="project-div animate" aria-hidden="true">
+            <p class="section-p">I have created an interactive Forum Leaderboard with the help of freeCodeCamp using HTML, CSS and Javascript. The project shows the latest topics, users, views and replies from the forum, as well as the topic's category.</p>
+            <img id="forum-leaderboard-screenshot" src="screenshots/forumLeaderboard2.png" alt="Screenshots of more topics posted on the forum.">
+            <p class="section-p">This project uses extensive Javascript code to fetch data for the topic's title, the users' Avatars, and the number of replies to a topic. The project uses functions to determine the individual topic's category, views and when the topic was last interacted with.</p>
+            <a class="project-link" href="https://github.com/haydencoding33/forumLeaderboard" target="_blank">The code used for this project can be found here</a>
         </div>
     </div>
     <div id="contact">
         <h3 class="section-title">Contact</h3>
-        <p class="section-p">Email me:<a class="contact-me-link" href="https://mail.proton.me/u/3/inbox#category=primary" target="_blank">haydencoding33@proton.me</a></p>
-        <p class="section-p">Message me on <a class="contact-me-link" href="https://www.linkedin.com/in/hayden-a-673571441/?isSelfProfile=true" target="_blank">LinkedIn</a></p>
-        <p class="section-p">Message me on <a class="contact-me-link" href="https://github.com/haydencoding33" target="_blank">Github</a></p>
+        <p class="contact-p">Email me:<a class="contact-me-link" id="email-link" href="https://mail.proton.me/u/3/inbox#category=primary" target="_blank">haydencoding33@proton.me</a></p>
+        <p class="contact-p">Message me on <a class="contact-me-link" href="https://www.linkedin.com/in/hayden-a-673571441/?isSelfProfile=true" target="_blank">LinkedIn</a></p>
+        <p class="contact-p">Message me on <a class="contact-me-link" href="https://github.com/haydencoding33" target="_blank">Github</a></p>
         <h2 id="closing-statement">Thank you for taking the time to view my portfolio. I hope to hear from you soon!</h2>
     </div>
     <script src="script.js"></script>
