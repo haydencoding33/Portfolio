@@ -174,9 +174,8 @@ ul a {
   100% { opacity: 1; }
 }
 
-.project-p {
-    margin-top: 2%;
-    width: 80%;
+.projects-first-p {
+    padding-top: 1%;
 }
 
 #bookmark-manager-screenshots {
@@ -191,11 +190,6 @@ ul a {
     width: 37%;
     margin: 2%;
     height: 400px;
-}
-
-.secondary-project-p {
-    margin: 3%;
-    width: 80%;
 }
 
 .project-link {
@@ -273,6 +267,10 @@ ul a {
 
     #projects-buttons-div {
         height: 300px;
+    }
+
+    .projects-first-p {
+        padding-top: 2%;
     }
 
     .bookmark-manager-screenshot {
@@ -386,6 +384,10 @@ ul a {
         top: 32%;
     }
 
+    #about, #services, #projects, #contact {
+        padding-top: 3%;
+    }
+
     .section-title {
         font-size: 2rem;
     }
@@ -409,6 +411,10 @@ ul a {
 
     .projects-button {
         height: 100%;
+    }
+
+    .projects-first-p {
+        padding-top: 3%;
     }
 
     .bookmark-manager-screenshot {
@@ -463,6 +469,10 @@ ul a {
         font-size: 1.5rem;
     }
 
+    #about, #services, #projects, #contact {
+        padding-top: 7%;
+    }
+
     .section-p {
         font-size: 1.2rem;
         width: 80%;
@@ -493,6 +503,10 @@ ul a {
     .projects-button {
         width: 70%;
         margin-bottom: 5%;
+    }
+
+    .projects-first-p {
+        padding-top: 8%;
     }
 
     #bookmark-manager-screenshots {
@@ -552,13 +566,16 @@ ul a {
         top: 23%;
     }
 
+    #about, #services, #projects, #contact {
+        padding-top: 8%;
+    }
+
     #certified {
         width: 80%;
     }
 
     #services {
         margin: 0;
-        padding: 0;
     }
 
     .service {
@@ -577,6 +594,10 @@ ul a {
         margin-bottom: 5%;
     }
     
+    .projects-first-p {
+        padding-top: 12%;
+    }
+
     #bookmark-manager-screenshots {
         flex-direction: column;
         align-items: center;
